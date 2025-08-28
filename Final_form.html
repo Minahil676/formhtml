@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-4 Unit Residential Appraisal Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 9pt;
+            margin: 20px;
+            color: #000;
+        }
+
+        .appraiser-name {
+            text-align: right;
+            margin-bottom: 5px;
+        }
+
+        .report-header {
+            text-align: center;
+            font-size: 13pt;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .file-no {
+            text-align: right;
+            margin-bottom: 8px;
+        }
+
+        .rotated-text {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            width: 22px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #ddd;
+            padding: 8px 3px;
+            white-space: nowrap;
+            font-size: 8pt;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 0.75px solid #000;
+            padding: 3px 5px;
+            vertical-align: top;
+            font-size: 9pt;
+        }
+
+        .pre-filled {
+            text-decoration: underline;
+        }
+
+        input[type="checkbox"] {
+            width: 10px;
+            height: 10px;
+            accent-color: black;
+            margin-right: 2px;
+            vertical-align: middle;
+        }
+
+        .checkbox-group {
+            margin-right: 8px;
+            font-size: 9pt;
+        }
+
+        .comments {
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .nested-table {
+            width: 100%;
+            border-spacing: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .nested-table td {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="appraiser-name">Mark A. Melikian</div>
+    <div class="report-header">2-4 UNIT RESIDENTIAL APPRAISAL REPORT</div>
+    <div class="file-no">File No.: 70601</div>
+
+    <!-- SUBJECT Section -->
+    <table>
+        <tr>
+            <td class="rotated-text">SUBJECT</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>Property Address: <span class="pre-filled">313 Nautilus St # 19</span></td>
+                        <td>City: <span class="pre-filled">La Jolla</span></td>
+                        <td>State: <span class="pre-filled">CA</span></td>
+                        <td>Zip Code: <span class="pre-filled">92037</span></td>
+                    </tr>
+                    <tr>
+                        <td>County: <span class="pre-filled">San Diego</span></td>
+                        <td colspan="3">Legal Description: <span class="pre-filled">Map 887 - Portion of Block D - Lots
+                                10 and 11</span></td>
+                    </tr>
+                    <tr>
+                        <td>Assessor's Parcel #: <span class="pre-filled">351-262-13-00</span></td>
+                        <td>Tax Year: <span class="pre-filled">2016</span></td>
+                        <td>R.E. Taxes: $ <span class="pre-filled">16,917.14</span></td>
+                        <td>Special Assessments: $ <span class="pre-filled">0</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Current Owner of Record: <span class="pre-filled">Hastings Trust 01-19-06</span>
+                        </td>
+                        <td colspan="2">Borrower (if applicable): <span class="pre-filled">Hastings Trust
+                                01-19-06</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Occupant:
+                            <label class="checkbox-group"><input type="checkbox"> Owner</label>
+                            <label class="checkbox-group"><input type="checkbox" checked> Tenant</label>
+                            <label class="checkbox-group"><input type="checkbox"> Vacant</label>
+                        </td>
+                        <td>
+                            Project Type:
+                            <label class="checkbox-group"><input type="checkbox"> PUD</label>
+                            <label class="checkbox-group"><input type="checkbox"> Other (describe)</label>
+                        </td>
+                        <td colspan="2">
+                            HOA: $ <span class="pre-filled">0</span>
+                            <label class="checkbox-group"><input type="checkbox"> per yr.</label>
+                            <label class="checkbox-group"><input type="checkbox"> per mo.</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Market Area Name: <span class="pre-filled">La Jolla/Beach Barber Tract</span></td>
+                        <td>Map Reference: <span class="pre-filled">41740</span></td>
+                        <td>Census Tract: <span class="pre-filled">0163.02</span></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- ASSIGNMENT Section -->
+    <table>
+        <tr>
+            <td class="rotated-text">ASSIGNMENT</td>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td colspan="2">The purpose of this appraisal is to develop an opinion of:</td>
+                        <td><label class="checkbox-group"><input type="checkbox" checked> Market Value (as
+                                defined)</label></td>
+                        <td><label class="checkbox-group"><input type="checkbox"> Other type of value (describe)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">This report reflects the following value (if not Current, see comments):</td>
+                        <td><label class="checkbox-group"><input type="checkbox" checked> Current (Inspection Date =
+                                Effective Date)</label></td>
+                        <td><label class="checkbox-group"><input type="checkbox"> Retrospective</label>
+                            <label class="checkbox-group"><input type="checkbox"> Prospective</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Approaches developed for this appraisal:</td>
+                        <td><label class="checkbox-group"><input type="checkbox" checked> Sales Comparison</label><br>
+                            <label class="checkbox-group"><input type="checkbox"> Cost Approach</label>
+                        </td>
+                        <td><label class="checkbox-group"><input type="checkbox" checked> Income Approach</label><br>
+                            (See Reconciliation Comments and Scope of Work)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Property Rights Appraised:</td>
+                        <td><label class="checkbox-group"><input type="checkbox" checked> Fee Simple</label><br>
+                            <label class="checkbox-group"><input type="checkbox"> Leasehold</label>
+                        </td>
+                        <td><label class="checkbox-group"><input type="checkbox"> Leased Fee</label><br>
+                            <label class="checkbox-group"><input type="checkbox"> Other (describe)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            Intended Use: <span class="pre-filled">The purpose of this appraisal is to establish the
+                                market value as of June 13, 2017. Date and time of inspection was June 13, 2017 at 11
+                                am.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Intended User(s) (by name or type): <span class="pre-filled">Melanie
+                                Hastings</span></td>
+                    </tr>
+                    <tr>
+                        <td>Client: <span class="pre-filled">Melanie Hastings</span></td>
+                        <td colspan="3">Address: <span class="pre-filled">252 Bonair Street La Jolla, CA 92037</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Appraiser: <span class="pre-filled">Mark A. Melikian</span></td>
+                        <td colspan="3">Address: <span class="pre-filled">P. O. Box 3051 Del Mar, CA 92014</span></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- MARKET AREA DESCRIPTION Section -->
+    <table>
+        <tr>
+            <td class="rotated-text">MARKET AREA DESCRIPTION</td>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td style="white-space:nowrap;">
+                            <div style="display:flex; align-items:center; margin-bottom:4px;">
+                                <div style="min-width:100px;">Location:</div>
+                                <label class="checkbox-group"><input type="checkbox"> Urban</label>
+                                <label class="checkbox-group"><input type="checkbox" checked> Suburban</label>
+                                <label class="checkbox-group"><input type="checkbox"> Rural</label>
+                            </div>
+
+                            <div style="display:flex; align-items:center; margin-bottom:4px;">
+                                <div style="min-width:100px;">Built up:</div>
+                                <label class="checkbox-group"><input type="checkbox" checked> Over 75%</label>
+                                <label class="checkbox-group"><input type="checkbox"> 25-75%</label>
+                                <label class="checkbox-group"><input type="checkbox"> Under 25%</label>
+                            </div>
+
+                            <div style="display:flex; align-items:center; margin-bottom:4px;">
+                                <div style="min-width:100px;">Growth rate:</div>
+                                <label class="checkbox-group"><input type="checkbox"> Rapid</label>
+                                <label class="checkbox-group"><input type="checkbox" checked> Stable</label>
+                                <label class="checkbox-group"><input type="checkbox"> Slow</label>
+                            </div>
+
+                            <div style="display:flex; align-items:center; margin-bottom:4px;">
+                                <div style="min-width:100px;">Property values:</div>
+                                <label class="checkbox-group"><input type="checkbox" checked> Increasing</label>
+                                <label class="checkbox-group"><input type="checkbox"> Stable</label>
+                                <label class="checkbox-group"><input type="checkbox"> Declining</label>
+                            </div>
+
+                            <div style="display:flex; align-items:center; margin-bottom:4px;">
+                                <div style="min-width:100px;">Demand/supply:</div>
+                                <label class="checkbox-group"><input type="checkbox" checked> Shortage</label>
+                                <label class="checkbox-group"><input type="checkbox"> In Balance</label>
+                                <label class="checkbox-group"><input type="checkbox"> Over Supply</label>
+                            </div>
+
+                            <div style="display:flex; align-items:center;">
+                                <div style="min-width:100px;">Marketing time:</div>
+                                <label class="checkbox-group"><input type="checkbox" checked> Under 3 Mos.</label>
+                                <label class="checkbox-group"><input type="checkbox"> 3-6 Mos.</label>
+                                <label class="checkbox-group"><input type="checkbox"> Over 6 Mos.</label>
+                            </div>
+                        </td>
+
+                        <td>
+                            Predominant Occupancy:<br>
+                            <label class="checkbox-group"><input type="checkbox"> Owner</label><br>
+                            <label class="checkbox-group"><input type="checkbox" checked> Tenant</label><br>
+                            <label class="checkbox-group"><input type="checkbox" checked> Vacant (0-5%)</label><br>
+                            <label class="checkbox-group"><input type="checkbox"> Vacant (>5%)</label>
+                        </td>
+
+                        <td>
+                            <div style="font-weight:bold; margin-bottom:4px;">2 - 4 Unit Housing</div>
+                            <div style="display:flex; justify-content:space-between; font-weight:bold;">
+                                <span>PRICE ($000)</span>
+                                <span></span>
+                                <span>AGE (yrs)</span>
+                            </div>
+                            <div>1,150 &nbsp;&nbsp; Low &nbsp;&nbsp; 10</div>
+                            <div>2,450 &nbsp;&nbsp; High &nbsp;&nbsp; 95</div>
+                            <div>1,803 &nbsp;&nbsp; Pred &nbsp;&nbsp; 65</div>
+                        </td>
+
+                        <td>
+                            Present Land Use:<br>
+                            One-Unit: <span class="pre-filled">60%</span><br>
+                            2-4 Unit: <span class="pre-filled">15%</span><br>
+                            Multi-Unit: <span class="pre-filled">15%</span><br>
+                            Comm'l: <span class="pre-filled">10%</span>
+                        </td>
+
+                        <td>
+                            Change in Land Use:<br>
+                            <label class="checkbox-group"><input type="checkbox"> Not Likely</label><br>
+                            <label class="checkbox-group"><input type="checkbox"> Likely</label><br>
+                            <label class="checkbox-group"><input type="checkbox" checked> In Process *</label><br>
+                            * To: <span class="pre-filled">New SFR and Multi-Family</span>
+                        </td>
+                    </tr>
+
+                    <!-- Row 2: Full-width description -->
+                    <tr>
+                        <td colspan="5">
+                            Market Area Boundaries, Description, and Market Conditions (including support for the above
+                            characteristics and trends):<br>
+                            <span class="pre-filled">
+                                The subject is located in the Beach Barber Tract area of La Jolla, a community of the
+                                city of San Diego...
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- SITE DESCRIPTION TABLE -->
+
+    <table>
+        <tr>
+            <td class="rotated-text">MARKET AREA DESCRIPTION</td>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td colspan="6"><span class="label-bold">Dimensions:</span> <span class="underline">See Plat
+                                Map</span></td>
+                        <td colspan="3"><span class="label-bold">Site Area:</span> <span class="underline">6,526
+                                Sq.Ft.</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><span class="label-bold">Zoning Classification:</span> <span
+                                class="underline">RM 1-1</span>
+                        </td>
+                        <td colspan="5">
+                            <span class="label-bold">Description:</span>
+                            <span class="underline">Resid, multi-family 1 unit per 3000 sf</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <div class="checkbox-label"><input type="checkbox"> Yes</div>
+                            <div class="checkbox-label"><input type="checkbox"> No</div>
+                            <div class="checkbox-label"><input type="checkbox" checked> Unknown</div>
+                            Are CC&Rs applicable?
+                        </td>
+                        <td colspan="2">
+                            Have the documents been reviewed?
+                            <div class="checkbox-label"><input type="checkbox"> Yes</div>
+                            <div class="checkbox-label"><input type="checkbox"> No</div>
+                        </td>
+                        <td colspan="3">
+                            <span class="label-bold">Zoning Compliance:</span>
+                            <div class="checkbox-label"><input type="checkbox" checked> Legal</div>
+                            <div class="checkbox-label"><input type="checkbox"> Legal nonconforming (grandfathered)
+                            </div>
+                            <div class="checkbox-label"><input type="checkbox"> Illegal</div>
+                            <div class="checkbox-label"><input type="checkbox"> No zoning</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="9"><span class="label-bold">Comments:</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="9">
+                            <span class="label-bold">Highest & Best Use as improved:</span>
+                            <input type="checkbox" checked> Present use
+                            <input type="checkbox"> Other use (explain)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <span class="label-bold">Actual Use as of Effective Date:</span> <span
+                                class="underline">Four
+                                Units</span>
+                        </td>
+                        <td colspan="5">
+                            <span class="label-bold">Use as appraised in this report:</span> <span
+                                class="underline">Four
+                                Units</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="9">
+                            <span class="label-bold">Summary of Highest & Best Use:</span>
+                            <span class="underline">
+                                Per city of San Diego planning department, the subject was previously conforming
+                                (current zoning
+                                allows two
+                                units on the subject's site) and has since been downzoned. The permitted structures on
+                                the subject's
+                                site can
+                                be rebuilt to their current configuration if destroyed.
+                            </span>
+                        </td>
+                    </tr>
+
+                    <!-- Utilities & Off-site Improvements -->
+                    <tr>
+                        <td colspan="3" class="section-header">Utilities</td>
+                        <td colspan="3" class="section-header">Off-site Improvements</td>
+                        <td colspan="3" class="section-header">Site Characteristics</td>
+                    </tr>
+                    <tr>
+                        <!-- Utilities -->
+                        <td colspan="3">
+                            Electricity: <input type="checkbox" checked><br>
+                            Gas: <input type="checkbox" checked><br>
+                            Water: <input type="checkbox" checked><br>
+                            Sanitary Sewer: <input type="checkbox" checked><br>
+                            Storm Sewer: <input type="checkbox" checked><br>
+                            Telephone: <input type="checkbox" checked><br>
+                            Multimedia: <input type="checkbox" checked>
+                        </td>
+
+                        <!-- Off-site Improvements -->
+                        <td colspan="3">
+                            Street: Asphalt<br>
+                            Width: 60 feet per plat map<br>
+                            Surface: Asphalt<br>
+                            Curb/Gutter: Concrete<br>
+                            Sidewalk: Concrete<br>
+                            Street Lights: Yes<br>
+                            Alley: Concrete<br>
+                            <input type="checkbox" checked> Public
+                            <input type="checkbox"> Private
+                        </td>
+
+                        <!-- Site Characteristics -->
+                        <td colspan="3">
+                            Frontage: <span class="underline">Typical</span><br>
+                            Topography: <span class="underline">Mostly Level</span><br>
+                            Size: <span class="underline">Average for Area</span><br>
+                            Shape: <span class="underline">Rectangle</span><br>
+                            Drainage: <span class="underline">Appears Adequate</span><br>
+                            View: <span class="underline">None Significant</span>
+                        </td>
+                    </tr>
+
+
+        </tr>
+        <!-- Additional site data -->
+        <tr>
+            <td colspan="3">Other site elements:
+                <input type="checkbox" checked> Inside Lot
+                <input type="checkbox"> Corner Lot
+                <input type="checkbox"> Cul de Sac
+                <input type="checkbox"> Underground Utilities
+                <input type="checkbox"> Other (describe)
+            </td>
+            <td colspan="3">
+                <input type="checkbox"> FEMA Spec'l Flood Hazard Area<br>
+                <input type="checkbox" checked> No<br>
+                FEMA Flood Zone: <span class="underline">X</span><br>
+                FEMA Map #: <span class="underline">060295-06073C1584G</span><br>
+                FEMA Map Date: <span class="underline">05/16/2012</span>
+            </td>
+
+        </tr>
+
+        <!-- Site Comments -->
+        <tr>
+            <td colspan="9">
+                <span class="label-bold">Site Comments:</span>
+                <span class="underline">The subject is located on a typical residential street for the area.
+                    There is no
+                    significant view.</span>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        document.querySelectorAll("span.pre-filled").forEach(span => {
+            const text = span.textContent.trim();
+            if (text.length > 40) {
+                // Use textarea for long text
+                const textarea = document.createElement("textarea");
+                textarea.rows = 3;
+                textarea.style.width = "98%";
+                textarea.value = text;
+                span.replaceWith(textarea);
+            } else {
+                // Use input for short text
+                const input = document.createElement("input");
+                input.type = "text";
+                input.value = text;
+                input.style.width = (text.length + 5) + "ch";
+                span.replaceWith(input);
+            }
+        });
+    </script>
+    <script>
+    document.querySelectorAll("span.pre-filled").forEach(span => {
+        const text = span.textContent.trim();
+        const input = document.createElement("input");
+        input.type = "text";
+        input.value = text;
+        input.style.width = (text.length + 5) + "ch";
+        span.replaceWith(input);
+    });
+    
+</script>
+
+</body>
+
+</html>
